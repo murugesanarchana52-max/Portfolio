@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        design an animated Product
+    </title>
+    <style>
+        body{ 
+            align-items: center;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(14, 229, 236);
+
+        }
+        .dd{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 280px;
+            padding:10px;
+            background-color: azure;
+            border: 3px solid yellow;
+           text-align: center;
+           
+        }
+        .dd h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .dd:hover{
+            transition-duration: 0.5s;
+            transform: translateY(20px);
+            box-shadow: 20px  20px 20px greenyellow;
+        }
+        .dd img{
+            background-color: aliceblue;
+            border: 2px solid blueviolet;
+        }
+        .dd img:hover{
+            box-shadow: 0 20px 20px yellow;
+        }
+        button{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: none;
+            border-radius: 4px;
+            background-color: blue;
+            animation:pro;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes pro{
+            25%{
+                background-color: red;
+                transform:scale(2);
+            }
+            50%{
+                background-color: rgb(138, 38, 219);
+                transform:scale(1);
+            }
+            75%{
+                background-color: rgb(235, 64, 64);
+                transform:scale(2);
+            }
+            100%{
+                background-color: rgb(127, 127, 226);
+                transform:scale(1);
+            }
+            
+        }
+         
+         
+    </style>
+</head>
+<body>
+    <h1>PRODUCT CARD</h1>
+    <div class="dd">
+        <img src="headphn.png" width="150" height="150">
+        <h2><u><i>Headphone </i></u></h2>
+        <p>Best Affordable Wireless Headphones VEATOOL T1... </p>
+          <h3><del>₹1,999</del></h3><h2>₹1,234</h2>
+          <h1>👇</h1>
+          <button>🫲🎊Buy Now🎊🫱</button>
+    </div>
+</body>
+</html>

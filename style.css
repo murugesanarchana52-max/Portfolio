@@ -1,0 +1,228 @@
+body{
+    background-image: url("bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+
+    display: flex;
+    justify-content: space-around;
+    font-size:80px;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    color:rgb(229, 229, 238);
+
+}
+.nn{
+position:sticky;
+top:0;
+display: flex;
+justify-content: center;
+gap: 10px;
+padding: 20px;
+background: rgb(236, 138, 10);
+text-align:center;
+}
+.nnn{
+    border-radius: 4px;
+padding: 10px;
+
+}
+.nnn a{
+   
+ color:white;
+}
+.nnn:hover
+{
+background-color:blue;
+}
+section{
+    text-align:center;
+    padding: 80px 40px;
+    color:wheat;
+}
+button{
+   
+    color: rgb(20, 20, 19);
+    background-color: black;
+}
+section button:hover{
+    background-color:yellowgreen;
+
+}
+h6{ justify-content: space-around;
+    font-size:40px;
+   text-align:center;
+    color: rgb(39, 179, 179);
+}
+.menu{
+    display: grid;
+        grid-template-columns:1fr;
+
+    color: aliceblue;
+    
+    
+    text-align: center;
+}
+.box{
+  
+ padding: 20px;
+ border-radius: 30px;
+font-size: 15px;  
+}
+.box:hover{
+    
+    background-color:blueviolet;
+}
+.fs{
+    display: flex;
+    
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+}
+.ff{
+    background-color: aliceblue;
+    color: blue;
+    border-radius:5px ;
+    font-size: 30px;
+    padding: 10px;
+}
+.ff:hover{
+    background-color: aqua;
+}
+.gy{
+    text-align:center;
+    padding: 20px;
+    display: grid;
+        grid-template-columns:1fr;
+}
+.gl{
+
+ padding: 30px;
+ border-radius: 30px;
+font-size: 15px;  
+}
+.cont{
+    
+    padding:10px;
+    color: aliceblue;
+    background-color: rgb(33, 33, 241);
+    width:500px;
+    margin-left: 400px;
+    
+}
+form{
+   
+    grid-template-columns: 1fr;
+    color: rgb(111, 152, 187);
+    display: grid;
+   justify-content:space-between;
+   }
+
+
+ button:hover{
+ 
+ 
+    background-color: brown;
+}
+.footer{
+    text-align: center;
+    background-color: gray;
+    color: black;
+    padding: 20px;
+}
+.vv{
+   margin: 40px; 
+}
+@media(max-width:767px){
+    .nn{
+        flex-wrap: wrap;
+        gap: 5px;
+
+    }
+    header{
+        font-size: 40px;
+    }
+    .fs{
+        flex-direction: column;
+        align-items: center;
+        gap:15px;
+    }
+    .ff{
+        width: 80%;
+        text-align: center;
+
+    }
+
+    .cont{
+        width: 90%;
+        margin: 20px ;
+    }
+    form{
+        grid-template-columns: 1fr;
+
+    }
+    .footer{
+        text-align: center;
+        padding: 20px;
+
+    }
+    .menu{
+        grid-template-columns: 1fr;
+    }
+    .gy{
+     grid-template-columns: 1fr;   
+    }
+
+}
+
+
+@media(min-width:768px){
+    .menu{
+        grid-template-columns: 1fr 1fr;
+    }
+    .gy{
+     grid-template-columns: 1fr 1fr;   
+    }
+    .gs{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+    }
+    .ff{
+        text-align: center;
+
+    }
+    .cont{
+        text-align: center;
+
+    }
+    form{
+    grid-template-columns:1fr 1fr;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+}
+@media(min-width:1024px){
+    .menu{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.gy{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+form{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}

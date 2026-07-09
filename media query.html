@@ -1,0 +1,59 @@
+<html>
+    <head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <title>
+        media quary
+    </title>
+    <style>
+        body{
+            margin: 0;
+            background-color: blue;
+        }
+        .con{
+            display:grid;
+            grid-template-columns:1fr;
+            background-color: red;
+            gap:10px;
+            padding: 10px;
+
+        }
+        .box{
+            background-color: orange;
+            padding: 20px;
+            text-align: center;
+        }
+       
+        @media(min-width:768px)
+        {
+            
+            .con{
+                grid-template-columns: 1fr 1fr;
+                background-color: aqua;
+            }
+        }
+         @media(min-width:1024px)
+        {
+            .con{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                background-color:pink;
+            }
+        
+
+    }
+        
+    </style>
+</head>
+    <body>
+        <div class="con">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            
+
+        </div>
+    </body>
+    </html>
+    

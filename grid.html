@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>grid</title>
+    <style>
+        
+        body{
+            background-color: bisque;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .conn{
+            display: grid;
+            grid-template-areas:
+            "header header"
+            "menu content"
+            "footer footer";
+            grid-template-columns: 200px 1fr;
+            gap:10px;
+            padding:15px;
+        }
+        h1{
+            margin: 0;
+            padding: 10px;
+        }
+        
+        h2{
+            color: darkmagenta;
+        }
+        .headd{
+            position: sticky;
+            top: 0;
+            grid-area: header;
+            background-color: navy;
+            color: rgb(30, 212, 14);
+            text-align:center;
+            
+        }
+        .men{
+            grid-area: menu;
+            background-color: lightblue;
+            padding: 20px;
+        }
+        .men ul{
+            list-style: none;
+        }
+        .men li{
+            padding:15px;
+            background: white;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .con{
+            grid-area: content;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .ff{
+            grid-area: footer;
+            background-color: gray;
+            color:white;
+            text-align: center;
+            padding: 20px;
+        }
+        p
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+
+        }
+
+        ul{
+            padding: 20px;
+           
+
+           
+
+        }
+        .ttt{
+             
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .ttt li{
+            
+            padding: 5px;
+            background: rgb(141, 122, 122);
+            margin-bottom: 10px;
+            border-radius: 5px;
+            color: black;
+        
+
+        }
+        .ttt ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+    
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="conn">
+
+    <div class="headd">
+        <h1>ERRORS 2 EXPERTS</h1>
+    <nav class="ttt">
+        <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>Help</li>
+        </ul>
+    </nav>
+</div>
+    <div class="men">
+        <h3>Menu</h3>
+        
+        <ul>
+            <li>Home</a></li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="con">
+        <h2>Welcome Students!</h2>
+
+
+        <p>
+            Welcome To The Errors to Experts. We are pleased to share our Institute Profile and Course Brochure for your reference. Errors2Experts is committed to bridging the gap between academic learning and industry requirements by providing practical, job-oriented training programs.
+
+
+        </p>
+
+        <br>
+        
+            <h2>Our training programs includes,</h2>
+            <ul>
+            <li>Python Programming</li>
+            <li> Java Programming</li>
+            <li>Python + SQL</li>
+            <li>Frontend Development (HTML, CSS, JavaScript)</li>
+            <li>Full Stack Development</li>
+            <li>MERN Stack Development</li>
+            <li>Networking</li>
+            <li>MS Office, Excel & PowerPoint</li>
+
+        </ul>
+
+        <p>
+            We would be delighted to discuss training opportunities, student development programs, workshops, and placement-oriented initiatives with your organization/institution.
+        </p>
+
+        <br>
+
+        <p>
+            Thank you for your time and consideration.
+        </p>
+    </div>
+
+    <div class="ff">
+        @2026 E2E 
+    </div>
+
+</div>
+
+</body>
+</html>

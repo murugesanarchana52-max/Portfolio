@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Product Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.card{
+    width: 280px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+
+    transition-property: transform, box-shadow;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px gray;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: blue;
+    cursor: pointer;
+    animation: bgg;
+
+    animation-duration: 2s;
+    animation
+}
+
+@keyframes bgg{
+
+    0%{
+        background: blue;
+        transform: scale(2);
+    }
+
+    
+    100%{
+        background: blue;
+        transform: scale(3);
+    }
+
+}
+</style>
+<body>
+
+<h1>Animated Product Card</h1>
+
+<div class="card">
+    <img src="product.jpg" alt="Product">
+
+    <h2>Wireless Headphones</h2>
+
+    <h3>₹1,999</h3>
+
+    <button>Buy Now</button>
+</div>
+
+</body>
+</html>

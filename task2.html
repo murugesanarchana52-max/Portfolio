@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transition</title>
+    
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+h1{
+    margin: 20px;
+}
+
+.box{
+    width: 150px;
+    height: 100px;
+    margin: 20px auto;
+    color: white;
+    line-height: 100px;
+}
+
+/* Box 1 */
+.box1{
+    background: red;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.box1:hover{
+    width: 250px;
+    background: blue;
+}
+
+/* Box 2 */
+.box2{
+    background: green;
+    transition: 2s;
+    transition-timing-function: ease-in;
+}
+
+.box2:hover{
+    width: 250px;
+    background: orange;
+}
+
+/* Box 3 */
+.box3{
+    background: purple;
+    transition: 1s;
+    transition-timing-function: ease-out;
+}
+
+.box3:hover{
+    width: 250px;
+    transform: rotate(4000000deg);
+}
+
+/* Box 4 */
+.box4{
+    background: brown;
+    transition: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.box4:hover{
+    background: pink;
+    border-radius: 50%;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button:hover{
+    background: blue;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Transition Effects</h1>
+
+<div class="box box1">Box 1</div>
+<div class="box box2">Box 2</div>
+<div class="box box3">Box 3</div>
+<div class="box box4">Box 4</div>
+
+<button>Click Me</button>
+
+</body>
+</html>

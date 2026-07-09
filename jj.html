@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Header Animation */
+header{
+    background:#0077cc;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    position:sticky;
+    top:0;
+    animation:slideDown 1s ease;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.4s;
+}
+
+nav a:hover{
+    color:yellow;
+    transform:scale(1.1);
+}
+
+/* Sections */
+section{
+    padding:40px;
+    margin:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.5s;
+    animation:fadeIn 2s;
+}
+
+section:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+h1{
+    animation:zoom 2s infinite alternate;
+}
+
+h2{
+    color:#0077cc;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#0077cc;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    animation:pulse 2s infinite;
+    transition:0.5s;
+}
+
+.btn:hover{
+    background:orange;
+}
+
+/* Footer */
+footer{
+    background:#0077cc;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Keyframes */
+
+@keyframes slideDown{
+    from{
+        transform:translateY(-100px);
+    }
+    to{
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes zoom{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.1);
+    }
+}
+
+@keyframes pulse{
+    0%{
+        background:#0077cc;
+    }
+    50%{
+        background:orange;
+    }
+    100%{
+        background:#0077cc;
+    }
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    section{
+        margin:10px;
+        padding:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mukil</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Hello! I am Mukil. I am learning HTML and CSS.</p>
+        <a href="#contact" class="btn"> Contact Me</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a student. I like web designing and front-end development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>MS Word</li>
+            <li>MS Excel</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Student Profile Card</li>
+            <li>Contact Form</li>
+            <li>Product Card</li>
+            <li>Portfolio Website</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email : mukil@example.com</p>
+        <p>Phone : 9876543210</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Mukil. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
